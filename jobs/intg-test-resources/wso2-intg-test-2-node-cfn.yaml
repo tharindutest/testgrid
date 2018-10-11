@@ -212,7 +212,7 @@ Resources:
   WSO2EnvPrivateSubnet1:
     Type: 'AWS::EC2::Subnet'
     Properties:
-      MapPublicIpOnLaunch: true
+      MapPublicIpOnLaunch: 'true'
       CidrBlock: 10.0.1.0/24
       AvailabilityZone: !Select
         - '0'
@@ -221,7 +221,7 @@ Resources:
   WSO2EnvPublicSubnet1:
     Type: 'AWS::EC2::Subnet'
     Properties:
-      MapPublicIpOnLaunch: true
+      MapPublicIpOnLaunch: 'true'
       CidrBlock: 10.0.254.0/24
       AvailabilityZone: !Select
         - '0'
@@ -230,7 +230,7 @@ Resources:
   WSO2EnvPublicSubnet2:
     Type: 'AWS::EC2::Subnet'
     Properties:
-      MapPublicIpOnLaunch: true
+      MapPublicIpOnLaunch: 'true'
       CidrBlock: 10.0.252.0/24
       AvailabilityZone: !Select
         - '1'
